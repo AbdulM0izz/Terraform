@@ -1,3 +1,8 @@
+variable "region" {
+  description = "value of region"
+  default = "eu-north-1"
+}
+
 terraform {
   required_providers {
     aws = {
@@ -8,7 +13,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "eu-north-1"
+  region = var.region
 }
 
 resource "aws_instance" "myserver" {
