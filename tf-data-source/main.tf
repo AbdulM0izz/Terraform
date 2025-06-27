@@ -19,6 +19,22 @@ data "aws_ami" "name" {
 
 }
 
+/*Security groups*/
+# data "aws_security_group" "name" {
+  
+# }
+
+//Vpc Id
+data "aws_vpc" "name" {
+  tags = {
+    Name = "my_vpc"
+  }
+}
+
+output "vpc_id" {
+  value = data.aws_vpc.name.id
+}
+
 output "aws_ami" {
   value = data.aws_ami.name.id
 }
