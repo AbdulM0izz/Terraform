@@ -12,7 +12,7 @@ provider "aws" {
   region = "eu-north-1"
 }
 
-/*In this data block block we fetch details*/
+/*In this data block block we fetch detailss*/
 data "aws_ami" "name" {
    most_recent = true
    owners = ["amazon"]
