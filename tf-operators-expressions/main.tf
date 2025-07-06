@@ -31,3 +31,7 @@ variable "map_list" {
     "height" = 5
   }
 }
+
+output "name" {
+  value =  var.person_list
+}
