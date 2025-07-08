@@ -12,7 +12,10 @@ variable "string_list" {
 output "name" {
 #   value = lower(local.value)
 # value = upper(local.value)
-value = startswith(local.value, "Hello")
+# value = startswith(local.value, "Hello")
+value = length(var.string_list)
 
 }
-
+output "name" {
+  
+}
