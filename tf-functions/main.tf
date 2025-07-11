@@ -16,6 +16,3 @@ output "name" {
 value = length(var.string_list)
 
 }
-output "name" {
-  
-}
