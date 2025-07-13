@@ -72,3 +72,6 @@ resource "aws_s3_bucket_website_configuration" "webapp" {
 output "name" {
   value = aws_s3_bucket_website_configuration.webapp.website_endpoint
 }
+output "name" {
+  
+}
