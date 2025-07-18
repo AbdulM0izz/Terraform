@@ -23,3 +23,7 @@ resource "aws_instance" "myserver" {
      Name = "terraform"
     }
 }
+
+output "name" {
+  
+}
