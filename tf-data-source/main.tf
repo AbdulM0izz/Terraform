@@ -43,7 +43,7 @@ resource "aws_instance" "myserver" {
     ami           = data.aws_ami.name.id
     instance_type = "t3.nano"
     tags = {
-     Name = "terraform-datasource"
+     Name = "terraform-datasourc"
     }
 }
 
